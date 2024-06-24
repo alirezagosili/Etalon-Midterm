@@ -18,8 +18,7 @@
     --Lunar-Green: #2a4032;
     --Killarney: #3a5e46;
     --white-opacity-30:#FFFFFF4D;
-    ;
-
+    --white-opacity-80:#FFFFFFCC;
     /* gradient */
     --gradient-green: linear-gradient(110.6deg, #2A4032 0.81%, #3A5E46 100%);
     --footer-gradient: linear-gradient(to right, #FDDE67 30%, #3B5F47 30%);
@@ -180,4 +179,35 @@ a {
     display: block;
     width: 100%;
     height: auto;
+}
+/* intro */
+.intro{
+    display: flex;
+}
+.intro-text{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 24px;
+    text-align: left;
+    margin-top: 85.13px;
+}
+.intro-text-number{
+    font-family: var(--font-primary);
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 72px;
+    color: var(--white-opacity-30);
+    padding-left: 10px;
+}
+.intro-text-description{
+    font-family: var(--font-primary);
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--white-opacity-80);
+}
+.intro-text-btn{
+    padding-top: 25px;
 }
