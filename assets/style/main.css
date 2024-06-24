@@ -2,6 +2,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root{
@@ -120,14 +122,11 @@ a {
     background-color: var(--cod-gray2);
 }
 /* hero */
-.hero{
+.hero {
     width: 100vw;
-    height: 94.8vh;
+    height: 748.5px;
     background: var(--gradient-green);
     padding-top: 25px;
-}
-.desktop-header{
-
 }
 .logo{
     font-family: var(--font-primary);
@@ -139,10 +138,11 @@ a {
 .logo-link{
     color: var(--white);
 }
-.desktop-header{
+.desktop-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 63.63px;
 }
 .nav .desktop-nav-ul{
     display: flex;
@@ -187,7 +187,7 @@ a {
     display: flex;
     flex-direction: row;
     /* flex-wrap: wrap; */
-    margin-top: 63.63px;
+    gap: 24px;
     justify-content: space-between;
 }
 /* intro-text */
@@ -222,7 +222,7 @@ a {
 .intro-img{
     position: relative;
     width: 758px;
-    height: 619.63px;
+    /* height: 619.63px; */
 }
 .intro-man {
     display: block;
@@ -315,6 +315,8 @@ a {
 .controls{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 21px;
     position: absolute;
     left: 736.84px;
@@ -343,4 +345,16 @@ a {
     background: var(--white);
     width: 21px;
     height: 21px;
+}
+/* brands */
+.brands {
+}
+.brands ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* gap: 82.76px; */
+    background-color: var(--Cod-Gray);
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
