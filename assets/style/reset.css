@@ -101,7 +101,7 @@ input {
     display: block;
 }
 body {
-    line-height: 1;
+    /* line-height: 1; */
     -webkit-font-smoothing: antialiased;
 }
 ol,

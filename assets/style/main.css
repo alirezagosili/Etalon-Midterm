@@ -17,9 +17,12 @@
     --Celtic: #1b2d22;
     --Lunar-Green: #2a4032;
     --Killarney: #3a5e46;
+    --white-opacity-30:#FFFFFF4D;
+    ;
+
     /* gradient */
-    --gradient-green:linear-gradient(110.6deg, #2A4032 0.81%, #3A5E46 100%);
-    --footer-gradient:linear-gradient(to right, #FDDE67 30%, #3B5F47 30%);
+    --gradient-green: linear-gradient(110.6deg, #2A4032 0.81%, #3A5E46 100%);
+    --footer-gradient: linear-gradient(to right, #FDDE67 30%, #3B5F47 30%);
     /* Fonts */
     --font-primary: "Lato", sans-serif;
     --font-secondary: "Roboto", sans-serif;
@@ -29,7 +32,7 @@ body {
 }
 .container{
     width: 100%;
-    max-width: 1440px;
+    max-width: 1540px;
     margin: 0 auto;
 }
 /* text */
@@ -47,6 +50,9 @@ h2{
     font-weight: 400;
     line-height: 48px;
     color: var(--black);
+}
+a {
+    text-decoration: none;
 }
 /* col */
 .col-4 {
@@ -111,4 +117,67 @@ h2{
 }
 .btn-black:hover{
     background-color: var(--cod-gray2);
+}
+/* hero */
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background: var(--gradient-green);
+    padding-top: 25px;
+}
+.desktop-header{
+
+}
+.logo{
+    font-family: var(--font-primary);
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 40px;
+    text-align: center;
+}
+.logo-link{
+    color: var(--white);
+}
+.desktop-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .desktop-nav-ul{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.nav .desktop-nav-list{
+    list-style: none;
+    font-family: var(--font-primary);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+}
+.nav .desktop-nav-list a{
+    color: var(--white-opacity-30);
+    transition: all 0.3s ease-out;
+}
+.nav .desktop-nav-list a:hover{
+    color: var(--white);
+}
+.shopping-cart{
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--goldenrod);
+}
+.shopping-cart:hover{
+    background-color: var(--Vis);
+}
+.shopping-cart-icon{
+    display: block;
+    width: 100%;
+    height: auto;
 }
