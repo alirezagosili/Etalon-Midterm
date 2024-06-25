@@ -28,7 +28,7 @@
 
     /* gradient */
     --gradient-green: linear-gradient(110.6deg, #2A4032 0.81%, #3A5E46 100%);
-    --footer-gradient: linear-gradient(to right, #FDDE67 30%, #3B5F47 30%);
+    --footer-gradient: linear-gradient(to right, #FDDE67 calc(100% / 12 * 4), #3B5F47 calc(100% / 12 * 4));
     /* Fonts */
     --font-primary: "Lato", sans-serif;
     --font-secondary: "Roboto", sans-serif;
@@ -60,7 +60,7 @@ h2{
 .inline-block {
     display: inline-block;
 }
-.none {
+.display-none {
     display: none;
 }
 a {
@@ -356,6 +356,7 @@ a {
     left: 736.84px;
     right: 0.16px;
     top: 198px;
+    z-index: 10;
 }
 .controls input {
     display: none;
@@ -509,7 +510,7 @@ a {
 /* best sellers */
 .best-sellers{
     padding-top: 70px;
-    margin-bottom: 70px;
+    /* margin-bottom: 70px; */
     background-color: var(--Mercury);
 }
 
@@ -519,7 +520,8 @@ a {
 }
 .best-sellers-box ul{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 35px;
 }
 .best-sellers-items{
     display: flex;
@@ -648,4 +650,24 @@ a {
     justify-content: center;
     align-items: center;
     padding-bottom: 70px;
+}
+/* Timer section */
+.timer{
+    display: flex;
+    gap: 62px;
+    padding-top: 78px;
+    padding-bottom: 78px;
+    background: var(--footer-gradient);
+}
+.shoes-off{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.shoes-off span{
+    font-family: var(--font-secondary);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
 }
