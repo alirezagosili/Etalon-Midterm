@@ -11,7 +11,7 @@
     --Mercury: #e9e9e9;
     --black: #000000;
     --Cod-Gray: #181818;
-    --cod-gray2:#1E1E1E;
+    --gray: #1E1E1E;
     --French-Gray: #c5c2ca;
     --goldenrod: #fdde67;
     --Vis: #ffeb9d;
@@ -107,6 +107,29 @@ a {
     gap: 10px;
     white-space: nowrap;
 }
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.btn span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+   
+.btn:hover span {
+    padding-right: 15px;
+}
+   
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
 .btn-yellow{
     background-color: var(--goldenrod);
     color: var(--Cod-Gray);
@@ -119,7 +142,7 @@ a {
     color: var(--white);
 }
 .btn-black:hover{
-    background-color: var(--cod-gray2);
+    background-color: var(--gray);
 }
 /* hero */
 .hero {
@@ -187,7 +210,7 @@ a {
     display: flex;
     flex-direction: row;
     /* flex-wrap: wrap; */
-    gap: 24px;
+    /* gap: 24px; */
     justify-content: space-between;
 }
 /* intro-text */
@@ -195,6 +218,8 @@ a {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    position: relative;
+    z-index: 20;
     gap: 24px;
     text-align: left;
     margin-top: 21.5px;
@@ -341,20 +366,136 @@ a {
     border-radius: 15px;
     transition: all 0.3s ease-out;
 }
+.controls input:hover ~ span{
+    background: var(--white);
+    width: 16px;
+    height: 16px;
+}
 .controls input:checked ~ span{
     background: var(--white);
     width: 21px;
     height: 21px;
 }
 /* brands */
-.brands {
-}
 .brands ul{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    /* gap: 82.76px; */
+    gap: 32px;
     background-color: var(--Cod-Gray);
     padding-top: 30px;
     padding-bottom: 30px;
 }
+.brands ul li img{
+    width: 100%;
+    height: auto;
+}
+/* new-collection */
+.new-collection{
+    padding-top: 70px;
+}
+.new-collection-box {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.new-collection-jacket{
+    background-color: var(--French-Gray);
+    border-radius: 24px;
+    min-width: 300px;
+    max-width: 500px;
+    min-height: 410px;
+    max-height: 550.75px;
+    position: relative;
+    width: 37.87%;
+}
+.new-collection-jacket h3{
+    font-family: var(--font-primary);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: left;
+    padding-left: 25px;
+    padding-top: 24px;
+}
+.jacket-img-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+.jacket-img-box img {
+    display: block;
+    width: 100%;
+    min-width: 197.28px;
+    max-width: 278.66px;
+    /* height: 478.88px; */
+    position: absolute;
+    bottom: 0;
+}
+ .jacket-btn{
+    padding: 24px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+ }
+ .new-collection-sunglasses{
+    display: flex;
+    background-color: var(--goldenrod);
+    width: 56.06%;
+    max-width: 740px;
+    min-width: 330px;
+    min-height: 246.49px;
+    max-height: 550.75px;
+    position: relative;
+    border-radius: 24px;
+ }
+ .sunglasses-img-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 30px;
+ }
+ .sunglasses-img-box .sunglasses{
+    display: block;
+    width: 100%;
+    min-width: 189.66px;
+    max-width: 455.14px;
+ }
+ .sunglasses-text{
+    padding-top: 71px;
+    display: flex;
+    flex-direction: column;
+    gap: 95px;
+    position: absolute;
+    z-index: 10;
+    right: 60px;
+ }
+ .sunglasses-text h3{
+    font-family: var(--font-primary);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+ }
+ .sunglasses-text span{
+    font-family: var(--font-secondary);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56.25px;
+    text-align: center;
+ }
+ .sunglasses-btn{
+    padding: 24px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+ }
+
+
+ 
