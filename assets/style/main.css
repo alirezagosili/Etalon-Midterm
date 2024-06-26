@@ -733,6 +733,9 @@ a {
     .container{
         max-width: 520px;
     }
+    .hero {
+        height: 638px;
+    }
     .desktop-header{
         display: none;
     }
@@ -745,11 +748,14 @@ a {
     .price{
         display: none;
     }
+    .shoes-off{
+        display: none;
+    }
     .padding-left{
-        padding-left: 15px;
+        padding-left: 1rem;
     }
     .padding-right{
-        padding-right: 15px;
+        padding-right: 1rem;
     }
     /* mobile navbar */
     .mobile-nav{
@@ -772,9 +778,6 @@ a {
         justify-content: space-between;
         width: 100%;
         max-width: 1530px;
-    }
-    .hero{
-        height: 638px;
     }
     /* intro section */
     .intro{
@@ -841,6 +844,7 @@ a {
     .new-collection-box{
         margin-top: 32px;
         gap: 32px;
+        justify-content: center;
     }
     .jacket-img-box img{
         width: 197px;
@@ -872,4 +876,52 @@ a {
         line-height: 28.13px;
         text-align: center;
     }
+
+    .best-sellers{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .best-sellers h2 {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+    }
+    .best-sellers-btn{
+        display: none;
+    }
+    .best-sellers-box{
+        margin-top: 32px;
+        margin-bottom: 0;
+        overflow-x: scroll;
+    }
+    .best-sellers-items{
+        width: 227.75px;
+        height: 271px;
+        gap: 14px;
+    }
+    .best-sellers-img{
+        padding: 31px 51px 40px 43px;
+    }
+    .best-sellers-img-item{
+        width: 132.99px;
+        height: 148.36px;
+    }
+    .best-sellers-text h5 {
+        margin-bottom: 0;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.75px;
+    }
+    .best-sellers-text span{
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 16.41px;
+        text-align: left;
+    }
+    .sale-tag{
+        top: 20px;
+        left: 20px;
+    }
+
 }   
