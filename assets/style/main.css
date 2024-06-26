@@ -285,7 +285,6 @@ a {
     top: 224px;
     left: 134.5px;
 } 
-
 .off-box{
     display: flex;
     width: 110px;
@@ -731,6 +730,9 @@ a {
     #mobile{
         display: block;
     }
+    .container{
+        max-width: 520px;
+    }
     .desktop-header{
         display: none;
     }
@@ -768,5 +770,59 @@ a {
         justify-content: space-between;
         width: 100%;
         max-width: 1530px;
+    }
+    .hero{
+        height: 640px;
+    }
+    .intro{
+        flex-direction: column;
+    }
+    .intro-text{
+        gap: 12px;
+        margin-top: 0;
+    }
+    .intro-text-number{
+        font-size: 30px;
+        line-height: 36px;
+    }
+    h1{
+        font-size: 60px;
+        line-height: 50px;
+    }
+    .intro-text-description{
+        font-size: 18px;
+        line-height: 21.6px;
+        white-space: nowrap;
+    }
+    .intro-img{
+        width: 100%;
+    }
+    .intro-man{
+        width: 208.08px;
+        height: 391px;
+        top: -44px;
+        left: 20%;
+    }
+    .intro-img-box::after {
+        width: 192.63px;
+        height: 192.63px;
+        left: 150px;
+        top: 10px;
+    }
+    .intro-img-box::before{
+        width: 198.55px;
+        height: 198.55px;
+        top: 65px;
+        left: 30px;
+    }
+    .controls{
+        left: -20px;
+        right: 0;
+        top: 280px;
+        flex-direction: row;
+    }
+    .brands ul {
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
 }
