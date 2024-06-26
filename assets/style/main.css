@@ -564,17 +564,26 @@ a {
     -webkit-appearance: none;
 }
 .heart-black::before{
-    position: absolute;
+    /* position: absolute;
     z-index: 2;
     content: "";
     background-color: gray;
     height: 60%;
     width: 100%;
     top: -55%;
-    border-radius: 9px 9px 0 0;
+    border-radius: 9px 9px 0 0; */
+    position: absolute;
+    z-index: 1;
+    content: "";
+    top: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    border-radius: 8px;
 }
 .heart-black::after{
-    position: absolute;
+    /* position: absolute;
     z-index: 2;
     content: "";
     background-color: gray;
@@ -583,7 +592,16 @@ a {
     transform: rotate(-90deg);
     top: 16%;
     right: 65%;
-    border-radius: 9px 9px 0 0;
+    border-radius: 9px 9px 0 0; */
+    position: absolute;
+    z-index: 1;
+    content: "";
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    border-radius: 8px;
 }
 .heart-black:checked,
 .heart-black:checked::before,
