@@ -546,6 +546,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    object-fit: fill;
 }
 .heart{
     position: absolute;
@@ -569,7 +570,7 @@ a {
     background-color: gray;
     height: 60%;
     width: 100%;
-    top: -57%;
+    top: -55%;
     border-radius: 9px 9px 0 0;
 }
 .heart-black::after{
@@ -577,11 +578,11 @@ a {
     z-index: 2;
     content: "";
     background-color: gray;
-    height: 60%;
+    height: 69%;
     width: 100%;
     transform: rotate(-90deg);
-    top: 20%;
-    right: 75%;
+    top: 16%;
+    right: 65%;
     border-radius: 9px 9px 0 0;
 }
 .heart-black:checked,
@@ -735,6 +736,7 @@ a {
         max-width: 520px;
     }
     .hero {
+        width: unset;
         height: 638px;
     }
     .desktop-header{
@@ -851,10 +853,16 @@ a {
         width: 197px;
         height: 339px;
     }
+    .new-collection-jacket{
+        width: 100%;
+    }
     .new-collection-jacket h3{
         font-size: 18px;
         font-weight: 700;
         line-height: 18px;
+    }
+    .new-collection-sunglasses{
+        width: 100%;
     }
     .sunglasses-img-box .sunglasses{
         width: 189.66px;
@@ -895,11 +903,12 @@ a {
         margin-top: 32px;
         margin-bottom: 0;
         overflow-x: scroll;
+        overflow-y: hidden;
     }
     .best-sellers-items{
         width: 227.75px;
         height: 271px;
-        gap: 14px;
+        gap: 12px;
     }
     .best-sellers-img{
         padding: 31px 51px 40px 43px;
@@ -907,6 +916,7 @@ a {
     .best-sellers-img-item{
         width: 132.99px;
         height: 148.36px;
+        object-fit: contain;
     }
     .best-sellers-text h5 {
         margin-bottom: 0;
@@ -958,5 +968,15 @@ a {
         font-weight: 300;
         line-height: 14.06px;
         color: var(--white);
+    }
+    .heart-black::before{
+        top: -54%
+    }
+    .heart-black::after{
+        top: 19%;
+        right: 70%;
+    }
+    .shopping-cart2:hover{
+        display: none;
     }
 }   
