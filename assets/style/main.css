@@ -987,14 +987,4 @@ a {
         line-height: 14.06px;
         color: var(--white);
     }
-    .heart-black::before{
-        top: -54%
-    }
-    .heart-black::after{
-        top: 19%;
-        right: 70%;
-    }
-    .shopping-cart2:hover{
-        display: none;
-    }
 }   
