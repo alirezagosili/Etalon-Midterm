@@ -24,6 +24,7 @@
     --white-opacity-20: #FFFFFF33;
     --black-opacity-60: #00000099;
     --black-opacity-20: #00000033;
+    --black-opacity-25:#18181840;
 
 
     /* gradient */
@@ -601,9 +602,12 @@ a {
     color:var(--white) ;
     font-family: var(--font-secondary);
     font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 300;
     line-height: 14.06px;
-    text-align: left;
+    text-align: center;
 }
 .best-sellers-text{
     display: flex;
@@ -670,4 +674,50 @@ a {
     font-weight: 700;
     line-height: 48px;
     text-align: left;
+}
+.timer-box{
+    display: flex;
+    flex-direction: column;
+    gap: 93.47px;
+}
+.timer-box h3 {
+    font-family: var(--font-primary);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 48px;
+    color: var(--white);
+}
+.timer-box-items{
+    display: flex;
+    gap: 48px;
+}
+.timer-box-item{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.timer-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:153.5px;
+    height:112px;
+    padding: 32px 58px 32px 58px;
+    border-radius: 8px;
+    background-color: var(--black-opacity-25);
+    color: var(--white);
+    font-family: Roboto;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+}
+.timer-info{
+    font-family: var(--font-secondary);
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28.13px;
+    text-align: center;
+    color: var(--white);
 }
