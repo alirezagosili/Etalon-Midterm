@@ -19,6 +19,7 @@
     --Celtic: #1b2d22;
     --Lunar-Green: #2a4032;
     --Killarney: #3a5e46;
+    --mobile-timer-bg:#3B5F47;
     --white-opacity-30:#FFFFFF4D;
     --white-opacity-80:#FFFFFFCC;
     --white-opacity-20: #FFFFFF33;
@@ -923,5 +924,39 @@ a {
         top: 20px;
         left: 20px;
     }
-
+    /* timer section */
+    .timer{
+        background: var(--mobile-timer-bg);
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .timer-box h3{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        text-align: center;
+    }
+    .timer-box{
+        width: 100%;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        align-items: center;
+    }
+    .timer-box-items{
+        gap: 12px;
+    }
+    .timer-number{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        width: 54px;
+        height: 56px;
+        padding: 12px 20px;
+    }
+    .timer-info {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 14.06px;
+        color: var(--white);
+    }
 }   
