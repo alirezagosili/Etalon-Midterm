@@ -2,8 +2,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 :root{
@@ -157,7 +155,7 @@ a {
 }
 /* hero */
 .hero {
-    width: 100vw;
+    width: 100%;
     height: 748.5px;
     background: var(--gradient-green);
     padding-top: 25px;
@@ -354,7 +352,6 @@ a {
     align-items: center;
     gap: 21px;
     position: absolute;
-    left: 736.84px;
     right: 0.16px;
     top: 198px;
     z-index: 10;
@@ -386,6 +383,8 @@ a {
     background: var(--white);
     width: 21px;
     height: 21px;
+    transform: translateY(-2.5px);
+    transform: translateX(-2.5px);
 }
 /* brands */
 .brands ul{
@@ -988,3 +987,103 @@ a {
         color: var(--white);
     }
 }   
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+    .padding-left{
+        padding-left: 1rem;
+    }
+    .padding-right{
+        padding-right: 1rem;
+    }
+    .sunglasses-img-box{
+        align-items: flex-end;
+    }
+    .off-box{
+        display: none;
+    }
+    .arrow-box{
+        display: none;
+    }
+    .price{
+        display: none;
+    }
+    .intro-text-number{
+        font-size: 40px;
+    }
+    h1{
+        font-size: 80px;
+    }
+    .intro-text-description{
+        font-size: 18px;
+    }
+    .intro-img-box{
+        width: 60%;
+    }
+    .sunglasses-img-box .sunglasses{
+        width: 70%;
+    }
+    .jacket-img-box img{
+        width: 55%;
+    }
+    .sunglasses-text{
+        gap: 40px;
+        right: 35px;
+    }
+    .sunglasses-text h3{
+        font-size: 20px;
+    }
+    .sunglasses-text span{
+        font-size: 32px;
+    }
+    .best-sellers-box{
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .best-sellers-box ul{
+        gap: 20px;
+    }
+    .best-sellers-img{
+        padding: 30px;
+    }
+    .best-sellers-img-item{
+        width: auto;
+    }
+    .shoes-off span{
+        font-size: 48px;
+    }
+    .shoes-off img {
+        width: 400px;
+        height: auto;
+    }
+    .timer-box h3{
+        font-size: 48px;
+    }
+    .timer-box-items{
+        gap: 20px;
+    }
+    .timer-number{
+        padding: 24px;
+        font-size: 48px;
+        width: 105px;
+    }
+    .intro-man{
+        left: 100px;
+    }
+    .intro-img-box::before{
+        left:29px;
+    }
+    .intro-img-box::after{
+        left: 215px;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 933px) {
+    .shoes-off{
+        display: none;
+    }
+    .timer{
+        background:var(--mobile-timer-bg);
+    }
+    .timer-box{
+        width: 100%;
+        align-items: center;
+    }
+}
