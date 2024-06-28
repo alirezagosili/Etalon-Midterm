@@ -28,6 +28,7 @@
 body {
     font-family: var(--font-primary);
 }
+/* container-for screen bigger than 1530px change max-width to 100%  */
 .container{
     width: 100%;
     max-width: 1540px;
@@ -562,9 +563,6 @@ a {
     color:var(--white) ;
     font-family: var(--font-secondary);
     font-size: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-weight: 300;
     line-height: 14.06px;
     text-align: center;
@@ -578,9 +576,6 @@ a {
     height: 40px;
     padding: 11px;
     border-radius: 6px;
-    display: flex;
-    justify-content: center;   
-    align-items: center;
     background-color: var(--goldenrod);
     transition: all 0.3s ease-out;
 }
@@ -610,9 +605,6 @@ a {
     margin-right:12px
 }
 .best-sellers-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding-bottom: 70px;
 }
 /* Timer section */
@@ -660,9 +652,6 @@ a {
 }
 
 .timer-number{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width:153.5px;
     height:112px;
     padding: 32px 58px 32px 58px;
@@ -1287,3 +1276,12 @@ a {
         width: 133px;
     }
 }
+/* for screen bigger than 1530 */
+/* @media screen and (min-width: 1531px){
+    .best-sellers-box ul{
+        justify-content: space-between;
+    }
+    .new-collection-sunglasses{
+        max-width: unset;
+    }
+} */
