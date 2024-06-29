@@ -837,12 +837,15 @@ a {
     .best-sellers{
         padding-top: 2rem;
         padding-bottom: 2rem;
+        padding-left: 0;
+        padding-right: 0;
     }
     .best-sellers h2 {
         font-size: 32px;
         font-weight: 400;
         line-height: 32px;
         text-align: left;
+        padding-left: 1rem;
     }
     .best-sellers-btn{
         display: none;
@@ -853,13 +856,20 @@ a {
         overflow-x: scroll;
         overflow-y: hidden;
     }
+    .best-sellers-box ul{
+        gap: 0;
+    }
+    .best-sellers-box ul li{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
     .best-sellers-items{
         width: 227.75px;
         height: 271px;
         gap: 12px;
     }
     .best-sellers-img{
-        padding: 31px 51px 40px 43px;
+        padding: 31px 51px 40px 30px;
     }
     .best-sellers-img-item{
         width: 132.99px;
